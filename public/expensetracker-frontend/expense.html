@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+    
+</style>
+</head>
+<body>
+    
+<form id="form2">
+    <label for="amount">Choose Expense Amount</label>
+    <input type="number" name="amount" id="amount" >
+    <label for="descripiton">Choose Expense descripiton</label>
+    <input type="text" name="descripiton" id="descripiton"  >
+    <label for="category">Choose a Category</label>
+    <select name="category" id="category">
+        <option value="petrol">petrol</option>
+        <option value="food">food</option>
+        <option value="movie">movie</option>
+        <option value="misc">misc</option>
+    </select>
+    <button>Add Expense</button>
+   
+   
+    
+
+</form>
+<button id="btnrazrpy">Buy premium</button>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<h1>Expenses</h1>
+<ul id="listItems"></ul>
+<div id="premiumUser"></div>
+<ul id="leaderboard"></ul>
+<button  id="download" style="visibility: hidden;">Download</button>
+<ul id="files"></ul>
+<div>
+    <select id="pagesize">
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="6">6</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+    </select>
+</div>
+<div id="pagination"></div>
+
+ 
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+ <script src="./expense.js"></script>
+ 
+ 
+</body>
+</html>
